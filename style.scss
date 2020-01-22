@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+:root {
+    --main-black: #1e202b;
+    --main-blue: #08aeea;
+    --main-green: #2af598;
+    --main-gradient: linear-gradient(to right, var(--main-blue), var(--main-green));
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    width: 100%;
+    background-color: #fff;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 700px;
+    color: var(--main-black);
+}
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+p, li {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-black);
+}
+
+.btnWhite {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 125px;
+
+    background: #2af598;
+    background: -webkit-linear-gradient(top right, #2af598, #08aeea);
+    background: -o-linear-gradient(top right, #2af598, #08aeea);
+    background: -moz-linear-gradient(top right, #2af598, #08aeea);
+    background: linear-gradient(to right, #2af598, #08aeea);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btnGroup {
+    position: relative;
+    z-index: 1;
+}
+.whiteBG {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    display: block;
+    height: 60px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.btnColor {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-image: var(--main-gradient);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.btnGreen {
+    color: var(--main-green);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span {
+    color: var(--main-green);
+}
+
+
+/* HEADER/NAV */
+nav {
+    display: inline-block;
+    width: 100%;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        line-height: 100px;
+    }
+
+    ul {
+        list-style: none;
+        float: right;
+
+        li {
+            display: inline-block;
+            margin-left: 50px;
+        }
+    }
+}
+.logo {
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+header {
+    background-image: url('images/header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 1000px;
+
+    width: 90%;
+    padding: 0 5%;
+
+    h1 {
+        color: #fff;
+        width: 55%;
+        margin: 90px 0 48px 0;
+    }
+    p {
+        color: #fff;
+        opacity: .9;
+        margin-bottom: 35px;
+    }
+}
+
+.ipad {
+    width: 60%;
+    position: absolute;
+    right: 10px;
+    bottom: -50px;
+}
+.iphone {
+    // width: 40%;
+    position: absolute;
+    right: 6%;
+    top: 150px;
+    height: 60vh;
+    display: none;
+    
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(black, .18);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(black, .18);
+    box-shadow: 0px 3px 5px 0px rgba(black, .18);
+    border-radius: 20px;
+}
+.mobile {
+    display: none;
+
+    ul {
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 0;
+        background-color: rgba(#fff, .1);
+
+        li {
+            margin: 0;
+            width: 100%;
+            border-bottom: 1px solid rgba(#fff, .2);
+        }
+    }
+}
+
+label {
+    margin: 0 48px 0 0;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 0; 
+}
+#toggle {
+    display: none;
+
+    &:checked ~ ul {
+        display: block;
+    }
+}
+
+.new4KMovies {
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 160px;
+    ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+    }
+     li {
+         img {
+            width: 92%;
+            margin: 4%;
+            -webkit-box-shadow: 0px 3px 5px 0px rgba(black, .18);
+            -moz-box-shadow: 0px 3px 5px 0px rgba(black, .18);
+            box-shadow: 0px 3px 5px 0px rgba(black, .18);
+        }
+     }
+}
+
+.sectionTitle h2, .sectionTitle a {
+    display: inline-block;
+    vertical-align: middle;
+}
+.sectionTitle a {
+    margin-left: 20px;
+}
+.sectionTitle {
+    margin: 50px 0 20px 6px;
+}
+
+/*------ CALL TO ACTION --------*/
+.callToAction {
+    width: 60%;
+    margin: 0 auto 170px auto;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 40px;
+    }
+}
+
+
+/*------ CALL TO ACTION --------*/
+
+footer  {
+    width: 90%;
+    padding: 0 5%;
+    a {
+        text-decoration: none;
+        color: var(--main-black);
+    }
+
+    ul {
+        float: right;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-left: 50px;
+        }
+    }
+    .copy a, .copy p {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .copy p {
+        margin-left: 20px;
+    }
+    .copy, & ul {
+        display: inline-block;
+        line-height: 80px;
+    }
+}
+
+/*------ RESPONSIVE DESIGN -------- */
+@media only screen and (max-width: 1200px) {
+    header {
+        h1 {
+            margin: 50px 0 40px 0;
+            font-size: 45px;
+        }
+    }
+    .btnWhite {
+        margin-bottom: 80px;
+    }
+    .ipad { display: none; }
+    .iphone { display: block; }
+    .callToAction {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .iphone {
+        display: none;
+    }
+    header {
+        background-position: left center;
+        h1 {
+            width: 100%;
+        }
+    }
+    footer {
+        ul { 
+            float: none;
+            display: block;
+            text-align: center;
+        }
+        li {
+            margin: 0 25px;
+        }
+        .copy {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 36px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        label {
+            margin-right: 5%;
+        }
+    }
+    .new4KMovies ul {
+        flex-direction: column;
+    }
+    footer {
+        ul {
+            display: none;
+        }
+    }
+    nav ul li {
+        margin: 0;
+    }
+
+}
